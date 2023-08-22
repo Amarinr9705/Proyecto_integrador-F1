@@ -1,6 +1,36 @@
 .section-cards {
-    background-color: #f1f2f3;
     padding-top: 3em;
+
+    &__header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/public/img/pexels-polina-kovaleva-6959287-_540p_-_1_.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    }
+    
+
+    &__header p,
+    &__header h1 {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+
+
+    }
+    &__header h1 {
+        margin-top: 15%;
+        padding: 1em;
+        font-size: 2.5em;
+    }
+    &__header p {
+        font-size: 1.5em;
+    }
+
+
 
     @media (min-width: 768px) {
         & {
@@ -14,9 +44,11 @@
 }
 
 .cards-container {
+    background-image: url(/public/img/background_cards.jpg);
+
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 3em;
     justify-content: center;
 }
 

@@ -2,12 +2,14 @@
 /* HEADER                                            */
 /* ------------------------------------------------- */
 
+
 .main-header {
     display: flex;
     flex-direction: column-reverse;
     position: fixed;
     width: 100%;
     z-index: 1;
+    
 ;
 
     @media (min-width: 768px) {
@@ -19,13 +21,16 @@
 
 #menu {
     display: none;
+    
 
     &:checked + .nav-bar {
         display: block;
     }
 
     &:checked ~ .search-bar .menu-toogle__label {
-        background-color: yellow;
+        
+        background-color: #E3C567;
+        scale: (1.1);
     }
 }
 
@@ -34,45 +39,64 @@
 /* ------------------------------------------------- */
 
 .nav-bar {
-    background-color: mediumaquamarine;
     display: none;
+    
 
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         list-style-type: none;
         justify-content: center;
-        gap: 5px;
         flex-direction: column;
+        background-color: #303633;
         
 
         @media (min-width: 768px) {
             & {
-                flex-direction: row;
+                flex-direction: row; 
+                gap: 16px;
+                background-color: #C8963E;
             }
+
         }
     }
 
     &__nav-item {
         text-align: center;
-        background-color: pink;
         
+        
+    }
+    &__nav-link:hover{
+        scale : (1.2);
+    }
+    &__nav-link:active{
+        scale: (1.1 );
+        color:  whitesmoke;
     }
 
     &__nav-link {
+        background-color: #E3C567 ;
         display: block;
-        background-color: purple;
-        color: #fff;
-        padding: 0.6em 2em;
+        color: whitesmoke;
+        padding: 0.4em 2em;
         text-decoration: none;
+        border-radius: 8px;
+        transition-duration: 80ms;
+        transition-property: scale, box-shadow;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        margin: 3px 0;
+        letter-spacing: 0.3em;
+        font-weight: bold;
     }
     
     @media (min-width: 768px) {
         & {
             display: block;
         }
+
     }
 }
+
 
 
 /* ------------------------------------------------- */
@@ -80,44 +104,73 @@
 /* ------------------------------------------------- */
 
 .search-bar {
-    background-color: olivedrab;
+    background-color: #C8963E;
     display: flex;
     justify-content: space-between;
 
-    &__logo-container, /* search-bar__logo-container */
-    &__form-container { /* search-bar__form-container */
+    &__logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        margin: auto 5px;
+        color: whitesmoke;
+        border-radius: 16px;
+    }
+    &__logo-container img{
+        height: 60px;
+        width: auto;
+    }
+
+
+    &__form-container { 
         padding: 1em;
     }
 
-    &__logo-container {
-        background-color: yellow;
-    }
+
 
     &__form-container {
-        background-color: gold;
         display: flex;
-        flex-basis: 100%; /* width: 100% */
-        justify-content: center;;
+        justify-content: right;
     }
 
-    &__form-label {
-        background-color: greenyellow;
-    }
 
     &__form-search {
-        background-color: deeppink;
-        width: 70%;
+        border-radius: 16px;
+        border: none;
     }
 
     &__form-submit {
-        background-color: darkslategray;
-        color: white;
+    background-color: #E3C567;
+    border-radius: 4em;
+    color: #303633;
+    padding: 0.3em 0.8em;
+    transition-duration: 0.4s;
+    transition-duration: 50ms;
+    transition-property: scale, box-shadow;
+    margin-left: 5px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border: none;
+    }
+    &__form-submit:active{
+        scale: (1.1 );
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     &__carrito-container {
         flex: 0 0 3em; /* shorthand (grow shrink basis)  basis = 3*16px => 48 */
-        background-color: goldenrod;
-        
+        background-color: #C8963E;
+        align-self: center;
+    }
+    &__carrito-container:hover {
+        color: #E3C567;
+        scale:(1.2);
+        cursor: pointer;
+    }
+    &__carrito-container:active {
+        color: #E3C567;
+        scale:(1.1);
     }
 }
 
@@ -128,13 +181,12 @@
 
 .menu-toogle {
     display: block;
-    background-color: red;
     flex: 0 0 3em;
     position: relative;
 
     &__label {
         display: block;
-        background-color: rgb(0, 0, 0);
+        background-color: #C8963E;
         height: 100%;
     }
 
@@ -142,7 +194,7 @@
     &__meat,
     &__bottom-bread {
         display: block;
-        background-color: #333;
+        background-color: #303633;
         height: .2em;
         position: absolute;
         left: .5em;
