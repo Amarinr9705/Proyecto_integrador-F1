@@ -48,14 +48,14 @@
         list-style-type: none;
         justify-content: center;
         flex-direction: column;
-        background-color: #303633;
+        background-color: rgba(245, 245, 245);
         
 
         @media (min-width: 768px) {
             & {
                 flex-direction: row; 
                 gap: 16px;
-                background-color: #C8963E;
+                background-color: rgba(245, 245, 245);
             }
 
         }
@@ -66,29 +66,38 @@
         
         
     }
-    &__nav-link:hover{
-        scale : (1.2);
-    }
-    &__nav-link:active{
-        scale: (1.1 );
-        color:  whitesmoke;
-    }
-
     &__nav-link {
-        background-color: #E3C567 ;
         display: block;
-        color: whitesmoke;
+        color: #303633;
         padding: 0.4em 2em;
         text-decoration: none;
         border-radius: 8px;
         transition-duration: 80ms;
         transition-property: scale, box-shadow;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        margin: 3px 0;
-        letter-spacing: 0.3em;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        margin: 2px 0 ;
+        letter-spacing: 0.2em;
         font-weight: bold;
+        font-size: 13px;
+        background-color:#E3C567;
+
+        @media (min-width: 768px) {
+            & {
+                background-color: rgba(245, 245, 245);
+            }
+    
+        }
     }
     
+    &__nav-link:hover{
+        scale : (1.1);
+        background-color: #E3C567;
+    }
+    &__nav-link:active{
+        scale: (1 );
+    }
+
+
     @media (min-width: 768px) {
         & {
             display: block;
@@ -104,9 +113,10 @@
 /* ------------------------------------------------- */
 
 .search-bar {
-    background-color: #C8963E;
+    background-color: rgba(245, 245, 245);
     display: flex;
     justify-content: space-between;
+    
 
     &__logo-container{
         display: flex;
@@ -114,7 +124,7 @@
         justify-content: center;
         font-weight: bolder;
         margin: auto 5px;
-        color: whitesmoke;
+        color:#303633;
         border-radius: 16px;
     }
     &__logo-container img{
@@ -125,48 +135,60 @@
 
     &__form-container { 
         padding: 1em;
-    }
-
-
-
-    &__form-container {
         display: flex;
-        justify-content: right;
+        flex: 1 1 auto;
+        justify-content: end;
     }
-
 
     &__form-search {
         border-radius: 16px;
         border: none;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        border: solid 1px black;
+        outline: none;
+        border-radius: 8px;
+        width: 25%;
+        margin-right: 5px;
+        padding-left: 5px;
     }
-
+    &__form-search:focus {
+        border: solid 2px rgba(0, 0, 0, 0.7)  ;
+    }
     &__form-submit {
-    background-color: #E3C567;
-    border-radius: 4em;
+    background-color:rgba(245, 245, 245);
+    border-radius: 8px;
     color: #303633;
     padding: 0.3em 0.8em;
-    transition-duration: 0.4s;
     transition-duration: 50ms;
     transition-property: scale, box-shadow;
     margin-left: 5px;
     font-weight: bold;
+    font-size: 0.9em;
     letter-spacing: 0.2em;
     border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    &__form-submit:hover{
+        background-color:#E3C567;
+        scale: (1.1);
     }
     &__form-submit:active{
-        scale: (1.1 );
+        scale: (1);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
-
     &__carrito-container {
-        flex: 0 0 3em; /* shorthand (grow shrink basis)  basis = 3*16px => 48 */
-        background-color: #C8963E;
+        background-color:rgba(245, 245, 245);
         align-self: center;
+        transition: scale 150ms;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        padding: 8px 8px;
+        border-radius: 8px;
     }
     &__carrito-container:hover {
         color: #E3C567;
         scale:(1.2);
         cursor: pointer;
+        
     }
     &__carrito-container:active {
         color: #E3C567;
@@ -186,7 +208,7 @@
 
     &__label {
         display: block;
-        background-color: #C8963E;
+        background-color:rgba(245, 245, 245, 0.75);
         height: 100%;
     }
 
