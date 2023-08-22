@@ -9,8 +9,6 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-    
-;
 
     @media (min-width: 768px) {
         & { /* .main-header */
@@ -48,6 +46,7 @@
         list-style-type: none;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
         background-color: rgba(245, 245, 245);
         
 
@@ -63,8 +62,13 @@
 
     &__nav-item {
         text-align: center;
-        
-        
+        width: 100%;
+
+        @media (min-width: 768px) {
+            & {
+                width: auto;
+            }
+    }
     }
     &__nav-link {
         display: block;
