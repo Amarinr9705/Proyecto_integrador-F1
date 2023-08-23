@@ -1,11 +1,9 @@
-
 .card {
     outline: none;
     width: 350px;
     height: auto;
     overflow: hidden;
-    background-color: #bbbbbb57;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: $sombra-estandar;
     border-radius: 16px;
     // transition: scale .5s, box-shadow .5s, translate 5s; /* No puede ser all */ /* (NO FUNCIONA) */
     transition: all 0.3s;
@@ -14,7 +12,7 @@
     &:focus {
         transform: scale(1.03) translate(0px,-20px);
         transform-origin: bottom;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: $sombra-estandar;
     }
 
     &:nth-child(2n + 1) {
@@ -26,9 +24,6 @@
     &:nth-child(4n + 4) {
         width: 80vw;
     }
-    &:nth-child(4n + 4) img {
-    }
-
     &__image-container {
         height: 250px;
         overflow: hidden;
@@ -44,33 +39,23 @@
 
         & h2{
             color: #edfceb;
-            border-bottom: 2px solid #303633;
+            border-bottom: 2px solid $color-tipografia;
         }
         & p {
             padding-top: 8px;
-            color: #303633;
+            color: $color-tipografia;
         }
         & i{
-            border: 1px solid #8bba88;
             padding: 15px 10px;
             margin-left: 25px;
             cursor:pointer;
             border-radius: 30%;
-            color: #303633;
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-            background-color:  rgb(251, 247, 240);
+            color: $color-tipografia;
+            box-shadow: $sombra-estandar;
+            background-color:$fondo-claro;
         }
         & i:hover{
             scale: (1.1);
-            padding: 15px 15px;
-            margin-left: 25px;
-            cursor:pointer;
-        }
-    }
-
-    @media (min-width: 1024px) {
-        & { /* .card */
-            min-width: 240px;
         }
     }
 

@@ -1,8 +1,6 @@
 /* ------------------------------------------------- */
 /* HEADER                                            */
 /* ------------------------------------------------- */
-
-
 .main-header {
     display: flex;
     flex-direction: column-reverse;
@@ -27,7 +25,7 @@
 
     &:checked ~ .search-bar .menu-toogle__label {
         
-        background-color: #8bba88;
+        background-color: $fondo-oscuro;
         scale: (1.05);
     }
 }
@@ -47,14 +45,14 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background-color: #8bba88;
+        background-color: $fondo-oscuro;
         
 
         @media (min-width: 768px) {
             & {
                 flex-direction: row; 
                 gap: 16px;
-                background-color: rgb(251, 247, 240);
+                background-color: $fondo-claro;
             }
 
         }
@@ -72,22 +70,22 @@
     }
     &__nav-link {
         display: block;
-        color: #303633;
+        color: $color-tipografia;
         padding: 0.4em 2em;
         text-decoration: none;
         border-radius: 8px;
         transition-duration: 80ms;
         transition-property: scale, box-shadow;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: $sombra-estandar;
         margin: 2px 0 ;
         letter-spacing: 0.2em;
         font-weight: bold;
         font-size: 13px;
-        background-color:#a7caa5;
+        background-color:$fondo-items;
 
         @media (min-width: 768px) {
             & {
-                background-color:  rgb(251, 247, 240);
+                background-color:  $fondo-claro;
             }
     
         }
@@ -95,7 +93,7 @@
     
     &__nav-link:hover{
         scale : (1.1);
-        background-color: #a7caa5;
+        background-color: $fondo-items;
     }
     &__nav-link:active{
         scale: (1);
@@ -117,7 +115,7 @@
 /* ------------------------------------------------- */
 
 .search-bar {
-    background-color: rgb(251, 247, 240);
+    background-color: $fondo-claro;
     display: flex;
     justify-content: space-between;
     
@@ -128,7 +126,7 @@
         justify-content: center;
         font-weight: bolder;
         margin: auto 5px;
-        color:#303633;
+        color:$color-tipografia;
         border-radius: 16px;
     }
     &__logo-container img{
@@ -145,10 +143,8 @@
     }
 
     &__form-search {
-        border-radius: 16px;
-        border: none;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-        border: solid 1px #303633;
+        box-shadow: $sombra-estandar;
+        border: solid 1px $color-tipografia;
         outline: none;
         border-radius: 8px;
         width: 25%;
@@ -156,12 +152,12 @@
         padding-left: 5px;
     }
     &__form-search:focus {
-        border: solid 2px rgba(0, 0, 0, 0.7)  ;
+        border: solid 2px rgba(0, 0, 0, 0.7);
     }
     &__form-submit {
-    background-color:rgba(245, 245, 245);
+    background-color:$fondo-claro;
     border-radius: 8px;
-    color: #303633;
+    color: $color-tipografia;
     padding: 0.3em 0.8em;
     transition-duration: 50ms;
     transition-property: scale, box-shadow;
@@ -170,33 +166,33 @@
     font-size: 0.9em;
     letter-spacing: 0.2em;
     border: none;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: $sombra-estandar;
     }
     &__form-submit:hover{
-        background-color:#a7caa5;
+        background-color:$fondo-items;
         scale: (1.1);
     }
     &__form-submit:active{
         scale: (1);
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: $sombra-estandar;
     }
     &__carrito-container {
-        background-color:rgba(245, 245, 245);
+        background-color:$fondo-claro;
         align-self: center;
         transition: scale 150ms;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: $sombra-estandar;
         padding: 8px 8px;
         border-radius: 8px;
     }
     &__carrito-container:hover {
-        color: #8bba88;
-        scale:(1.2);
+        color: $fondo-items;
+        scale:(1.1);
         cursor: pointer;
         
     }
     &__carrito-container:active {
-        color: #8bba88;
-        scale:(1.1);
+        color: $fondo-items;
+        scale:(1);
     }
 }
 
@@ -212,7 +208,6 @@
 
     &__label {
         display: block;
-        background-color:rgba(245, 245, 245, 0.75);
         height: 100%;
     }
 
@@ -220,7 +215,7 @@
     &__meat,
     &__bottom-bread {
         display: block;
-        background-color: #303633;
+        background-color: $color-tipografia;
         height: .2em;
         position: absolute;
         left: .5em;
