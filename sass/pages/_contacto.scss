@@ -1,59 +1,57 @@
 /* FORMULARIO */
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em 1em 1em;
-    gap: 20px;
-    width: 65%;
-    margin: 1em auto;
-    box-shadow: $sombra-estandar;
-    background-color: $fondo-claro;
-
-    &__title {
-        font-size: 22px;
-        font-weight: bold;
-        border-bottom: 2px solid $fondo-oscuro;
-        width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 1em 1em;
+  gap: 20px;
+  width: 65%;
+  margin: 1em auto;
+  box-shadow: $sombra-estandar;
+  background-color: $fondo-claro;
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid $fondo-oscuro;
+    width: 41%;
+  }
+  &__message {
+    border-radius: 8px;
+  }
+  @media (min-width: 768px) {
+    & {
+      /* .main-header */
+      width: 40%;
     }
-
-    &__message {
-        border-radius: 8px;
-    } 
-
-    @media (min-width: 768px) {
-        & { /* .main-header */
-            width: 40%;
-        }
+  }
+  @media (max-width: 918px) {
+    & {
+      /* .main-header */
+      width: 65%;
     }
-    @media (max-width: 918px) {
-        & { /* .main-header */
-            width: 65%;
-        }
-    }
+  }
 }
 form > input {
-    height: 30px;
-    border-radius: 8px;
-    margin-top: -10px;
-    font-size: 1em;
+  height: 30px;
+  border-radius: 8px;
+  margin-top: -10px;
+  font-size: 1em;
 }
 form > label {
-    color: $color-tipografia;
-    font-weight: bold;
+  color: $color-tipografia;
+  font-weight: bold;
 }
 form > button {
-    width: 100%;
-    background: $fondo-oscuro;
-    border-radius: 10px;
-    padding: 12px;
-    color: $color-tipografia;
-    margin: 16px 0;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+  width: 100%;
+  background: $fondo-oscuro;
+  border-radius: 10px;
+  padding: 12px;
+  color: $color-tipografia;
+  margin: 16px 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 form > button:hover {
-    background-color:$fondo-items;
+  background-color: $fondo-items;
 }
-

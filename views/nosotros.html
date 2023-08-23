@@ -1,133 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/eb496ab1a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Proyecto integrador - NOSOTROS</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-  <title>Proyecto integrador - NOSOTROS</title>
-</head>
+  <body>
+    <header class="main-header">
+      <input type="checkbox" id="menu" />
 
-<body>
-
-  <header class="main-header">
-    <input type="checkbox" id="menu">
-
-    <nav class="nav-bar"> <!-- nav-bar -->
-      <ul class="nav-bar__nav-list">
-        <li class="nav-bar__nav-item">
-          <a href="/index.html" class="nav-bar__nav-link">INICIO</a>
-        </li>
-        <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">ALTA</a>
-        </li>
-        <li class="nav-bar__nav-item">
-          <a href="/views/contacto.html" class="nav-bar__nav-link">CONTACTO</a>
-        </li>
-        <li class="nav-bar__nav-item">
-          <a href="/views/nosotros.html" class="nav-bar__nav-link">NOSOTROS</a>
-        </li>
-      </ul>
-    </nav> <!-- nav-bar -->
-    <div class="search-bar"> <!-- search-bar -->
-      <div class="search-bar__logo-container"><img src="/public/img/Logo.png" alt="">Todo Hogar</div>
-      <form action="#" class="search-bar__form-container">
-        <label for="busqueda" class="search-bar__form-label"></label>
-        <input type="search" class="search-bar__form-search" id="busqueda">
-        <input type="submit" class="search-bar__form-submit" value="Buscar">
-      </form>
-      <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping fa-xl"></i></div>
-      <div class="menu-toogle">
-        <label for="menu" class="menu-toogle__label">
-          <span class="menu-toogle__top-bread"></span>
-          <span class="menu-toogle__meat"></span>
-          <span class="menu-toogle__bottom-bread"></span>
-        </label>
+      <nav class="nav-bar">
+        <!-- nav-bar -->
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="/index.html" class="nav-bar__nav-link">INICIO</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="#" class="nav-bar__nav-link">ALTA</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="/views/contacto.html" class="nav-bar__nav-link"
+              >CONTACTO</a
+            >
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="/views/nosotros.html" class="nav-bar__nav-link"
+              >NOSOTROS</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- nav-bar -->
+      <div class="search-bar">
+        <!-- search-bar -->
+        <div class="search-bar__logo-container">
+          <img src="/public/img/Logo.png" alt="" />Todo Hogar
+        </div>
+        <form action="#" class="search-bar__form-container">
+          <label for="busqueda" class="search-bar__form-label"></label>
+          <input type="search" class="search-bar__form-search" id="busqueda" />
+          <input type="submit" class="search-bar__form-submit" value="Buscar" />
+        </form>
+        <div class="search-bar__carrito-container">
+          <i class="fa-solid fa-cart-shopping fa-xl"></i>
+        </div>
+        <div class="menu-toogle">
+          <label for="menu" class="menu-toogle__label">
+            <span class="menu-toogle__top-bread"></span>
+            <span class="menu-toogle__meat"></span>
+            <span class="menu-toogle__bottom-bread"></span>
+          </label>
+        </div>
       </div>
-    </div> <!-- search-bar -->
+      <!-- search-bar -->
+    </header>
 
+    <header class="section-cards__header">
+      <h1>TODO HOGAR IMPORTADOS</h1>
+      <p>CONOCENOS<br /><i class="fa-solid fa-arrow-down"></i></p>
+    </header>
 
-  </header>
-
-  <header class="section-cards__header">
-    <h1>TODO HOGAR IMPORTADOS</h1>
-    <p>CONOCENOS<br><i class="fa-solid fa-arrow-down"></i></p>
-  </header>
-
-
-  <div class="aboutUs">
-    <section class="aboutUs__tittle-container">
+    <div class="aboutUs">
+      <section class="aboutUs__tittle-container">
         <h1 class="aboutUs__tittle">SOBRE NOSOTROS</h1>
-    </section>
+      </section>
 
-    <div class="aboutUs__container-block">
-      <img class="aboutUs__mainImg" src="/public/img/Logo.png">
-      <div class="aboutUs__allText aboutUs__aboveText">
-        <h1 class="aboutUs__text-blk aboutUs__headingText">NUESTRA EMPRESA</h1>
-        <p class="aboutUs__text-blk aboutUs__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum nemo tempore molestiae quae quidem ex saepe, ea dolore. Porro nihil ut accusantium excepturi sapiente neque inventore voluptatum iste odio hic dolorem maiores temporibus rem corporis delectus magnam tenetur, error ex aspernatur! Id accusantium deleniti consectetur deserunt amet, saepe quasi veritatis pariatur nostrum animi repellendus aspernatur ducimus quae consequatur quo laborum in? Culpa architecto neque at alias ad in praesentium repellat saepe nisi, distinctio numquam optio maiores similique accusamus? Eum!</p>
+      <div class="aboutUs__container-block">
+        <img class="aboutUs__mainImg" src="/public/img/Logo.png" />
+        <div class="aboutUs__allText aboutUs__aboveText">
+          <h1 class="aboutUs__text-blk aboutUs__headingText">
+            NUESTRA EMPRESA
+          </h1>
+          <p class="aboutUs__text-blk aboutUs__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum
+            nemo tempore molestiae quae quidem ex saepe, ea dolore. Porro nihil
+            ut accusantium excepturi sapiente neque inventore voluptatum iste
+            odio hic dolorem maiores temporibus rem corporis delectus magnam
+            tenetur, error ex aspernatur! Id accusantium deleniti consectetur
+            deserunt amet, saepe quasi veritatis pariatur nostrum animi
+            repellendus aspernatur ducimus quae consequatur quo laborum in?
+            Culpa architecto neque at alias ad in praesentium repellat saepe
+            nisi, distinctio numquam optio maiores similique accusamus? Eum!
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="aboutUs__container-block aboutUs__bottomContainer">
-      <img class="aboutUs__mainImg" src="/public/img/Logo.png">
-      <div class="aboutUs__allText aboutUs__bottomText">
-        <h1 class="aboutUs__text-blk aboutUs__headingText">NUESTRA MISIÓN</h1>
-        <p class="aboutUs__text-blk aboutUs__description"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquam perferendis sunt quas consequuntur tempora autem ducimus accusantium debitis quidem fugit aperiam animi, quae, corporis nihil vel a unde ex magni quaerat modi. Ratione tenetur omnis numquam nisi repellat assumenda quod molestias nostrum, facilis corporis hic minus at labore deserunt.</p>
+      <div class="aboutUs__container-block aboutUs__bottomContainer">
+        <img class="aboutUs__mainImg" src="/public/img/Logo.png" />
+        <div class="aboutUs__allText aboutUs__bottomText">
+          <h1 class="aboutUs__text-blk aboutUs__headingText">NUESTRA MISIÓN</h1>
+          <p class="aboutUs__text-blk aboutUs__description">
+            <br />Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Fugiat aliquam perferendis sunt quas consequuntur tempora autem
+            ducimus accusantium debitis quidem fugit aperiam animi, quae,
+            corporis nihil vel a unde ex magni quaerat modi. Ratione tenetur
+            omnis numquam nisi repellat assumenda quod molestias nostrum,
+            facilis corporis hic minus at labore deserunt.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="aboutUs__container-block">
-        <img class="aboutUs__mainImg" src="/public/img/Logo.png">
+      <div class="aboutUs__container-block">
+        <img class="aboutUs__mainImg" src="/public/img/Logo.png" />
         <div class="aboutUs__allText aboutUs__aboveText">
           <h1 class="aboutUs__text-blk aboutUs__headingText">NUESTRA VISIÓN</h1>
-          <p class="text-blk aboutUs__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat veritatis culpa harum excepturi sequi at nesciunt consequatur quidem expedita.</p>
+          <p class="text-blk aboutUs__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            fugiat veritatis culpa harum excepturi sequi at nesciunt consequatur
+            quidem expedita.
+          </p>
         </div>
       </div>
-
-    
-
-  </div>
-
-
-
-
-
-
-
-
-  <footer class="footer">
-    <div class="footer__grupo-1">
-        <div class="footer__box">
-            <figure>
-                <a href="#">
-                    <img src="/public/img/Logo.png" alt="Logo de SLee Dw">
-                </a>
-            </figure>
-        </div>
-        <div class="footer__box">
-            <h2 class="footer__tittle">POLÍTICAS</h2>
-            <p>Envíos gratis por compras mayores a 10 USD.</p>
-            <p>Garantía de 90 días en todos tus productos.</p>
-        </div>
-        <div class="footer__box">
-            <h2 class="footer__tittle" >SIGUENOS</h2>
-            <div class="footer__red-social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-            </div>
-        </div>
     </div>
-    <div class="footer__grupo-2">
+
+    <footer class="footer">
+      <div class="footer__grupo-1">
+        <div class="footer__box">
+          <figure>
+            <a href="#">
+              <img src="/public/img/Logo.png" alt="Logo de SLee Dw" />
+            </a>
+          </figure>
+        </div>
+        <div class="footer__box">
+          <h2 class="footer__tittle">POLÍTICAS</h2>
+          <p>Envíos gratis por compras mayores a 10 USD.</p>
+          <p>Garantía de 90 días en todos tus productos.</p>
+        </div>
+        <div class="footer__box">
+          <h2 class="footer__tittle">SIGUENOS</h2>
+          <div class="footer__red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__grupo-2">
         <small>&copy; 2023 <b>THI</b> - Todos los Derechos Reservados.</small>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-
-  
-  <script type="module" src="/main.js"></script>
-</body>
-
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
