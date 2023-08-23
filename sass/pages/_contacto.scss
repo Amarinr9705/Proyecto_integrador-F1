@@ -1,40 +1,53 @@
 /* FORMULARIO */
-.form-contacto {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1em 1em 1em;
     gap: 20px;
-    width: 45%;
+    width: 65%;
     margin: 1em auto;
     box-shadow: $sombra-estandar;
     background-color: $fondo-claro;
+
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+        border-bottom: 2px solid $fondo-oscuro;
+        width: 41%;
+    }
+
+    &__message {
+        border-radius: 8px;
+    } 
+
+    @media (min-width: 768px) {
+        & { /* .main-header */
+            width: 40%;
+        }
+    }
+    @media (max-width: 918px) {
+        & { /* .main-header */
+            width: 65%;
+        }
+    }
 }
-  form > input {
+form > input {
     height: 30px;
     border-radius: 8px;
     margin-top: -10px;
     font-size: 1em;
 }
-  #message {
-    border-radius: 8px;
-} 
 form > label {
     color: $color-tipografia;
-}
-.form__title {
-    font-size: 22px;
     font-weight: bold;
-    border-bottom: 2px solid $fondo-oscuro;
-    width: 41%;
 }
-
 form > button {
     width: 100%;
     background: $fondo-oscuro;
     border-radius: 10px;
     padding: 12px;
-    color: white;
+    color: $color-tipografia;
     margin: 16px 0;
     font-size: 16px;
     border: none;
@@ -43,3 +56,4 @@ form > button {
 form > button:hover {
     background-color:$fondo-items;
 }
+
