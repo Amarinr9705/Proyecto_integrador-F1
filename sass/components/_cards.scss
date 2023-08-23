@@ -7,6 +7,7 @@
     border-radius: 16px;
     // transition: scale .5s, box-shadow .5s, translate 5s; /* No puede ser all */ /* (NO FUNCIONA) */
     transition: all 0.3s;
+    background-color: $fondo-cards; 
 
     &:hover, /* .card:hover */
     &:focus {
@@ -15,12 +16,7 @@
         box-shadow: $sombra-estandar;
     }
 
-    &:nth-child(2n + 1) {
-        background-image: linear-gradient(to top, #8bba8855 0%, #a7caa5a1 27%);   
-    }
-    &:nth-child(2n + 2) {
-        background-image: linear-gradient(to top, #a7caa54f 0%, #8bba889a 27%);
-    }
+
     &:nth-child(4n + 4) {
         width: 80vw;
     }
@@ -38,12 +34,12 @@
         padding: 1em;
 
         & h2{
-            color: #edfceb;
+            color: $color-tipografia;
             border-bottom: 2px solid $color-tipografia;
         }
         & p {
             padding-top: 8px;
-            color: $color-tipografia;
+            color: #303633b5;
         }
         & i{
             padding: 15px 10px;
