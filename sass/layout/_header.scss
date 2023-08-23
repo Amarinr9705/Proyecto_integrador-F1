@@ -27,8 +27,8 @@
 
     &:checked ~ .search-bar .menu-toogle__label {
         
-        background-color: #E3C567;
-        scale: (1.1);
+        background-color: #8bba88;
+        scale: (1.05);
     }
 }
 
@@ -47,14 +47,14 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(245, 245, 245);
+        background-color: #8bba88;
         
 
         @media (min-width: 768px) {
             & {
                 flex-direction: row; 
                 gap: 16px;
-                background-color: rgba(245, 245, 245);
+                background-color: rgb(251, 247, 240);
             }
 
         }
@@ -83,11 +83,11 @@
         letter-spacing: 0.2em;
         font-weight: bold;
         font-size: 13px;
-        background-color:#E3C567;
+        background-color:#a7caa5;
 
         @media (min-width: 768px) {
             & {
-                background-color: rgba(245, 245, 245);
+                background-color:  rgb(251, 247, 240);
             }
     
         }
@@ -95,10 +95,10 @@
     
     &__nav-link:hover{
         scale : (1.1);
-        background-color: #E3C567;
+        background-color: #a7caa5;
     }
     &__nav-link:active{
-        scale: (1 );
+        scale: (1);
     }
 
 
@@ -117,7 +117,7 @@
 /* ------------------------------------------------- */
 
 .search-bar {
-    background-color: rgba(245, 245, 245);
+    background-color: rgb(251, 247, 240);
     display: flex;
     justify-content: space-between;
     
@@ -148,7 +148,7 @@
         border-radius: 16px;
         border: none;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-        border: solid 1px black;
+        border: solid 1px #303633;
         outline: none;
         border-radius: 8px;
         width: 25%;
@@ -173,7 +173,7 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     }
     &__form-submit:hover{
-        background-color:#E3C567;
+        background-color:#a7caa5;
         scale: (1.1);
     }
     &__form-submit:active{
@@ -189,13 +189,13 @@
         border-radius: 8px;
     }
     &__carrito-container:hover {
-        color: #E3C567;
+        color: #8bba88;
         scale:(1.2);
         cursor: pointer;
         
     }
     &__carrito-container:active {
-        color: #E3C567;
+        color: #8bba88;
         scale:(1.1);
     }
 }
