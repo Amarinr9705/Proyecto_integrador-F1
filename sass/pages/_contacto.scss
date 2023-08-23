@@ -1,0 +1,45 @@
+/* FORMULARIO */
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 1em 1em;
+    gap: 20px;
+    width: 45%;
+    margin: 1em auto;
+    box-shadow: $sombra-estandar;
+    background-color: $fondo-claro;
+}
+  form > input {
+    height: 30px;
+    border-radius: 8px;
+    margin-top: -10px;
+    font-size: 1em;
+}
+  #message {
+    border-radius: 8px;
+} 
+form > label {
+    color: $color-tipografia;
+}
+.form__title {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid $fondo-oscuro;
+    width: 41%;
+}
+
+form > button {
+    width: 100%;
+    background: $fondo-oscuro;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+form > button:hover {
+    background-color:$fondo-items;
+}
